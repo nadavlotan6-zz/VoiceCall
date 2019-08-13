@@ -44,6 +44,8 @@ app.get('/', (req, res) => {
             console.log(err || result);
         },
     );
+
+    res.sendFile('index.html');
 })
 
 app.get('/keepalive', (req, res) => {
