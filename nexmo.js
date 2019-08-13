@@ -6,7 +6,7 @@ const nexmo = new Nexmo({
     apiSecret: 'TNV3NuXqg3y6zsaA',
     applicationId: '3ac3ccd3-31af-465b-907a-ee2f77c4dac8',
     // privateKey: process.env.PRIVATE_KEY,
-    // privateKey: './private.key',
+    privateKey: './private.key',
 });
 
 const ncco = [{
