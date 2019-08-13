@@ -46,6 +46,10 @@ app.get('/', (req, res) => {
     );
 })
 
+app.get('/keepalive', (req, res) => {
+    console.log("Keeping Heroku App Alive");
+})
+
 app.listen(process.env.PORT || 5000, function () {
     console.log("Server running on port 8000");
 })
