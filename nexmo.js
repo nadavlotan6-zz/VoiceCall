@@ -1,12 +1,13 @@
 const Nexmo = require('nexmo');
 const app = require('express')()
+const dir = __dirname;
 
 const nexmo = new Nexmo({
     apiKey: '27e1cf5c',
     apiSecret: 'TNV3NuXqg3y6zsaA',
     applicationId: '3ac3ccd3-31af-465b-907a-ee2f77c4dac8',
     // privateKey: process.env.PRIVATE_KEY,
-    privateKey: './private.key',
+    privateKey: dir + '/private.key',
 });
 
 const ncco = [{
@@ -45,7 +46,7 @@ app.get('/', (req, res) => {
         },
     );
 
-    res.sendFile('./index.html');
+    res.sendFile(dir + '/index.html');
 })
 
 app.get('/keepalive', (req, res) => {
