@@ -14,7 +14,7 @@ const ncco = [{
     action: 'talk',
     voiceName: 'Kimberly',
     // text: "<speak>'Hey everyone!! <break time='0.1s' />\n My name is Salli and I am Nadavs personal assistant. I am 100% sure he will be a great Zell teammate. Besides being a coffee addict, he is a great person!! After all, he has created me!'</speak>",
-    text: "<speak> <prosody volume='x-loud'> <break time='1s'/> 'Aha? Hi! My name is <break strength='strong'/> What? <break strength='strong'/> My name is <break strength='strong'/> <prosody pitch='high'> Who?  </prosody> <break strength='strong'/> my name is <break strength='strong'/> <prosody rate='fast'> chicky chicky </prosody> Slim Shady'</prosody>  </speak>",
+    text: "<speak> <prosody volume='x-loud'> <break time='1s'/> 'Hi! My name is <break strength='strong'/> What? <break strength='strong'/> My name is <break strength='strong'/> <prosody pitch='high'> Who?  </prosody> <break strength='strong'/> my name is <break strength='strong'/> <prosody rate='fast'> chicky chicky </prosody> Slim Shady'</prosody>  </speak>",
     // text: 'Hey Bro! \n My name is Salli and I am Nadavs personal assistant. He sends you love and kisses, and specifically asked me to say to you: fuck you and goodbye',
 }, ];
 
@@ -46,13 +46,13 @@ app.get('/', (req, res) => {
         },
     );
 
-    res.sendFile(dir + '/index.html');
+    res.sendFile(dir + '/public/index.html');
 })
 
 app.get('/keepalive', (req, res) => {
     console.log("Keeping Heroku App Alive");
 })
 
-app.listen(process.env.PORT || 5000, function () {
-    console.log("Server running on port 8000");
+app.listen(process.env.PORT || 3000, function () {
+    console.log("Server running on port 3000");
 })
