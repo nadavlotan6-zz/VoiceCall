@@ -12,9 +12,9 @@ const nexmo = new Nexmo({
 
 const ncco = [{
     action: 'talk',
-    voiceName: 'Kimberly',
+    voiceName: 'Joanna',
     // text: "<speak>'Hey everyone!! <break time='0.1s' />\n My name is Salli and I am Nadavs personal assistant. I am 100% sure he will be a great Zell teammate. Besides being a coffee addict, he is a great person!! After all, he has created me!'</speak>",
-    text: "<speak> <prosody volume='x-loud'> <break time='1s'/> 'Hi! My name is <break strength='strong'/> What? <break strength='strong'/> My name is <break strength='strong'/> <prosody pitch='high'> Who?  </prosody> <break strength='strong'/> my name is <break strength='strong'/> <prosody rate='fast'> chicky chicky </prosody> Slim Shady'</prosody>  </speak>",
+    text: "<speak> <prosody volume='x-loud'> <prosody rate='medium'> <break time='2s'/> Hi everyone! I have spent some time with Nadav in the last days,  and I can tell you he is eager to work with you all! I promise you, he can deliver some cool things, like creating me! <break time='0.6s' /> Enjoy the Sip!!! <break time='1s'/>  '</prosody> </prosody>  </speak>",
     // text: 'Hey Bro! \n My name is Salli and I am Nadavs personal assistant. He sends you love and kisses, and specifically asked me to say to you: fuck you and goodbye',
 }, ];
 
